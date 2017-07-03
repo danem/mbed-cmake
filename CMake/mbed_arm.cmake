@@ -166,6 +166,7 @@ set(MBED_COMMON_FLAGS_DEBUG ${MBED_COMMON_FLAGS}
 )
 
 set(MBED_COMMON_LINKER_FLAGS
+    "-Wl,--no-wchar-size-warning"
     "-Wl,--gc-sections"               # eliminate unused sections and symbols from output
     "-Wl,--wrap,main"
     "-Wl,--wrap,malloc_r"
