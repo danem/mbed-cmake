@@ -297,7 +297,6 @@ endforeach()
 
 # print debugging information
 if (${MBED_CMAKE_DEBUG})
-    get_property(dirs DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY INCLUDE_DIRECTORIES)
     message(STATUS "Source Files:")
     foreach(src ${MBED_SOURCE_FILES})
         message(STATUS "  ${src}")
