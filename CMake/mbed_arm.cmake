@@ -143,6 +143,7 @@ set(MBED_COMMON_FLAGS
     -funsigned-char                  # force all chars to be compiled unsigned
     -fno-delete-null-pointer-checks  # force compiler to assume we can't access memory address 0. enables some optimizations
     -fomit-frame-pointer             # aggressively look to omit frame pointers
+    -fno-rtti                        # no runtime type information
     -mtune=${MBED_CORE}
     -mcpu=${MBED_CORE}
     -DTARGET_${MBED_TARGET}
@@ -198,8 +199,8 @@ string(REPLACE ";" " " MBED_COMMON_LINKER_STR "${MBED_COMMON_LINKER_FLAGS}")
 
 set(CMAKE_C_FLAGS "${MBED_COMMON_FLAGS_STR} -std=gnu99")
 set(CMAKE_CXX_FLAGS ${MBED_COMMON_FLAGS_STR})
-set(CMAKE_CXX_FLAGS_RELEASE ${MBED_COMMON_FLAGS_REL_STR})# "-fno-rtti" "-Wvla")
-set(CMAKE_CXX_FLAGS_MINSIZEREL ${MBED_COMMON_FLAGS_REL_STR})# "-fno-rtti" "-Wvla")
+set(CMAKE_CXX_FLAGS_RELEASE ${MBED_COMMON_FLAGS_REL_STR})
+set(CMAKE_CXX_FLAGS_MINSIZEREL ${MBED_COMMON_FLAGS_REL_STR})
 set(CMAKE_CXX_FLAGS_DEBUG ${MBED_COMMON_FLAGS_DBG_STR})
 set(CMAKE_EXE_LINKER_FLAGS ${MBED_COMMON_LINKER_STR})
 
