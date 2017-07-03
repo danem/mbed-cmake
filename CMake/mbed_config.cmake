@@ -15,7 +15,7 @@ set(MBED_TARGET "" CACHE STRING "Target board name")
 # OPTIONAL
 # Set these variables to upload your program to the board.
 # Depending on your IDE this may not be necessary.
-set(MBED_MOUNT "/Volumes/NODE_F303K8\ 1" CACHE FILEPATH "Optional path to device volume")
+set(MBED_MOUNT "" CACHE FILEPATH "Optional path to device volume")
 
 # Set this to ON to display some debbuging info
 # while configuring the project
