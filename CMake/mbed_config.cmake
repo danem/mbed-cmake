@@ -3,14 +3,14 @@
 # ---------------------------------------------------
 #
 # Set this variable to the mbed-os build directory
-SET(MBED_PATH "/Users/dane.mason/Programming/CPP/Projects/mbed-os" CACHE PATH "Path to root mbed directory. This is not the path to a build folder.")
+SET(MBED_PATH "" CACHE PATH "Path to root mbed directory. This is not the path to a build folder.")
 
 # Set this variable to target your development board
 # Currently supported:
 #   NUCLEO_F303K8
 #   NUCLEO_F767ZI
 #
-set(MBED_TARGET "NUCLEO_F303K8" CACHE STRING "Target board name")
+set(MBED_TARGET "" CACHE STRING "Target board name")
 
 # OPTIONAL
 # Set these variables to upload your program to the board.
